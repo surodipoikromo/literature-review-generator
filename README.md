@@ -128,22 +128,3 @@ Aplikasi ini adalah alat bantu penyusunan literature review, bukan pengganti mem
 ## License
 
 MIT
-
-## Troubleshooting HTTP 500
-
-Jika halaman awal menampilkan HTTP 500 setelah instalasi:
-
-```bash
-php artisan optimize:clear
-php artisan key:generate
-php artisan serve
-```
-
-Pastikan `.env` sudah ada dan `APP_KEY` terisi. Untuk melihat error sebenarnya:
-
-```bash
-php artisan about
-php artisan route:list
-```
-
-Log aplikasi tersedia di `storage/logs/laravel.log`.
